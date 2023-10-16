@@ -1,0 +1,5 @@
+- hosts: localhost
+  tasks:
+    - name: Induce an exception to see what happens
+      ansible.builtin.ping:
+        data: crash
